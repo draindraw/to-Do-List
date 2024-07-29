@@ -1,0 +1,86 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: darkgoldenrod;
+    margin: 0;
+
+}
+
+.conatiner{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0, 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+}
+
+form{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 0, 5px, 5px, 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.complete{
+    text-decoration: line-through;
+    color: gray;
+}
+
+button.delete{
+background:red ;
+color: white;
+border: none;
+cursor: pointer;
+padding: 5px 10px;
+border-radius: 5px;
+}
+/* Media Queries for responsiveness */
+@media(max-width: 600px){
+    .container{
+        width: 90%;
+        padding: 10px;
+    }
+    form{
+        flex-direction: column;
+    }
+    input, button{
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+    input{
+        width: calc(100% - 22px);
+    }
+    button{
+        width: 100%;
+    }
+}
